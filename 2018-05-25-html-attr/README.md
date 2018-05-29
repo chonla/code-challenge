@@ -9,7 +9,7 @@ Given a HTML node, get value of given attribute.
 * If attribute does not exist, return empty string.
 * If duplicate attribute is found, return the value of the first one.
 
-## For example
+## Examples
 
 ### getAttr(<tag attr1="v1" attr2="v2"></tag>, attr2)
 
