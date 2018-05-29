@@ -6,12 +6,42 @@ import (
 )
 
 func main() {
-	fmt.Println(dia(1))
-	fmt.Println(dia(2))
-	fmt.Println(dia(3))
-	fmt.Println(dia(4))
-	fmt.Println(dia(5))
-	fmt.Println(dia(6))
+	data := map[int]string{
+		1: `*`,
+		2: ` *
+***
+ *`,
+		3: `  *
+ ***
+*****
+ ***
+  *`,
+		4: `   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *`,
+		5: `    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *`,
+	}
+
+	for k, v := range data {
+		res := dia(k)
+		if res == v {
+			fmt.Println("Cool!")
+		} else {
+			fmt.Printf("expecting [%v] to be [%v] but [%v]\n", k, v, res)
+		}
+	}
 }
 
 func dia(n int) string {
