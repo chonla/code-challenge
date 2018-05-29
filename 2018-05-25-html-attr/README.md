@@ -1,6 +1,13 @@
 # Get HTML Attribute
 
-Given a HTML node, get value of given attribute. If HTML is not be able to parse, return empty string. If attribute does not exist, return empty string.
+Given a HTML node, get value of given attribute. 
+
+## Condition
+
+* No HTML Parser is allowed.
+* If HTML is not be able to parse, return empty string.
+* If attribute does not exist, return empty string.
+* If duplicate attribute is found, return the value of the first one.
 
 ## For example
 
